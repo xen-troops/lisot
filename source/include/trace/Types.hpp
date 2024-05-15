@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <iostream>
+#include <cstdint>
 
 #if OS_TARGET == OS_ANDROID
    #include <android/log.h>

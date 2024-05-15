@@ -4,6 +4,7 @@
 
 
 #include <unistd.h>
+#include <ctime>
 
 #include "random.hpp"
 
