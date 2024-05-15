@@ -4,6 +4,7 @@
 
 
 #include <cstring>
+#include <cstdint>
 
 #include "trace/Types.hpp"
 
