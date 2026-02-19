@@ -57,9 +57,10 @@ namespace client {
          }
          case AF_INET:
          {
-            const char* address_cstr = parameters->value_or< std::string >(
+            std::string address_str = parameters->value_or<std::string>(
                   "address", common::default_values::address_inet
-               ).first.c_str( );
+               ).first;
+            const char* address_cstr = address_str.c_str();
             in_addr address_buf;
             int result = inet_pton( AF_INET, address_cstr, (char*)&address_buf );
             if( 0 == result )
