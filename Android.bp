@@ -18,6 +18,12 @@ cc_binary {
         "-Wno-ignored-qualifiers",
         "-Wno-unused-private-field",
         "-Wno-unused-variable",
+
+        "-DOS_LINUX=0",
+        "-DOS_ANDROID=1",
+        "-DOS_TARGET=OS_ANDROID",
+        "-DMSG_TRACE",
+        "-DCOLORED_TRACE",
     ],
     local_include_dirs: ["source/include"],
 }
